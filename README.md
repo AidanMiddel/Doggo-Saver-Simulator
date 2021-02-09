@@ -4,7 +4,10 @@
 
 * klas SD1A/C
 
-### namen:
+### Namen:
 
 Aidan Middel en Yair Hormechea Lora
 
+### Links:
+
+[Trello](https://trello.com/b/g36NWgDr/arcademechanics)
