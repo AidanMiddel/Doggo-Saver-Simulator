@@ -26,7 +26,7 @@ public class PlayerControler : MonoBehaviour
 
     //double jump
 
-    private in extraJumps;
+    private int extraJumps;
     public int extraJumpsValue;
 
     //functions
@@ -36,13 +36,13 @@ public class PlayerControler : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdare(){
+    void FixedUpdate(){
 
-        isGrounded = Physics2D.Overlapcircle(groundcheck.position, checkRadious, whatIsGround);
+        isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkRadious, whatIsGround);
 
         moveInput = Input.GetAxis("Horizontal");
-        Debug.Log(moveInput);
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        Debug.Log(moveInput);
 
         if (facingRight == false && moveInput > 0) {
             Flip();
@@ -52,13 +52,14 @@ public class PlayerControler : MonoBehaviour
     }
 
     void Update(){
-        if (isGrounded == true;){
+        if (isGrounded == true){
             extraJumps = extraJumpsValue;
         }
-        if(moveInput.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0){
+
+        if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0){
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
-        } else if (Input.GetDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true){
+        } else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true){
             rb.velocity = Vector2.up * jumpForce;
         }
     }
