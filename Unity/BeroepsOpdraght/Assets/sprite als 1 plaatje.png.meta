@@ -1,0 +1,440 @@
+fileFormatVersion: 2
+guid: 080827068f7fa644bad717246e09c45c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5206977622458840501
+    second: sprite als 1 plaatje_0
+  - first:
+      213: 6606620439814580872
+    second: sprite als 1 plaatje_1
+  - first:
+      213: 2782866823112067045
+    second: sprite als 1 plaatje_2
+  - first:
+      213: -4774083630479800450
+    second: sprite als 1 plaatje_3
+  - first:
+      213: 1519043354927191373
+    second: sprite als 1 plaatje_4
+  - first:
+      213: 2411512010739618717
+    second: sprite als 1 plaatje_5
+  - first:
+      213: 6671900179423298672
+    second: sprite als 1 plaatje_6
+  - first:
+      213: -369551739338231629
+    second: sprite als 1 plaatje_7
+  - first:
+      213: -8481725559246449556
+    second: sprite als 1 plaatje_8
+  - first:
+      213: 6510483528221482844
+    second: sprite als 1 plaatje_9
+  - first:
+      213: 2931913400240671010
+    second: sprite als 1 plaatje_10
+  - first:
+      213: -555243313459692250
+    second: sprite als 1 plaatje_11
+  - first:
+      213: 3468162211078283534
+    second: sprite als 1 plaatje_12
+  - first:
+      213: 7927452830285527250
+    second: sprite als 1 plaatje_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 670
+        width: 204
+        height: 304
+      alignment: 9
+      pivot: {x: 0.49999985, y: 0.03448647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4aceeba0791db7b0800000000000000
+      internalID: -5206977622458840501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 746
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.23791438, y: 0.21276398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88aabf0694e6fab50800000000000000
+      internalID: 6606620439814580872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_2
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 730
+        width: 344
+        height: 251
+      alignment: 9
+      pivot: {x: 0.4429763, y: 0.68979675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e780d0a1aabe9620800000000000000
+      internalID: 2782866823112067045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_3
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 646
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e778e357b3c0fbdb0800000000000000
+      internalID: -4774083630479800450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_4
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 645
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d455ad012e9b41510800000000000000
+      internalID: 1519043354927191373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 402
+        width: 79
+        height: 187
+      alignment: 9
+      pivot: {x: 0.12754253, y: 0.949566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9319b3a569677120800000000000000
+      internalID: 2411512010739618717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 542
+        width: 120
+        height: 71
+      alignment: 9
+      pivot: {x: 0.091331735, y: 0.18424709}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074046b2dd9579c50800000000000000
+      internalID: 6671900179423298672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_7
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 567
+        width: 124
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0fd9aa6a61fdaf0800000000000000
+      internalID: -369551739338231629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_8
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 459
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6493ceba8bda4a80800000000000000
+      internalID: -8481725559246449556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_9
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 459
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f5caf5642e95a50800000000000000
+      internalID: 6510483528221482844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_10
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 370
+        width: 144
+        height: 83
+      alignment: 9
+      pivot: {x: 0.91839874, y: 0.1454909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2298d8d14bf30b820800000000000000
+      internalID: 2931913400240671010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_11
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 386
+        width: 106
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62df251f5216b48f0800000000000000
+      internalID: -555243313459692250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 163
+        width: 114
+        height: 163
+      alignment: 9
+      pivot: {x: 0.85643274, y: 0.91260797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0121c6e723612030800000000000000
+      internalID: 3468162211078283534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite als 1 plaatje_13
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 42
+        width: 291
+        height: 286
+      alignment: 9
+      pivot: {x: 0.50481486, y: 0.034583166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d875d20958f30e60800000000000000
+      internalID: 7927452830285527250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
