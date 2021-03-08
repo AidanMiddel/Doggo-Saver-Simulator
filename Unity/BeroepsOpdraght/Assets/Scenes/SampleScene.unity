@@ -556,6 +556,8 @@ GameObject:
   - component: {fileID: 1120314259}
   - component: {fileID: 1120314258}
   - component: {fileID: 1120314257}
+  - component: {fileID: 1120314261}
+  - component: {fileID: 1120314260}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -666,7 +668,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 20
+  m_GravityScale: 9.5
   m_Material: {fileID: 6200000, guid: 076d2fb270e4ccc45b1a7ed64bd8f950, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -711,13 +713,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 75
-  jumpForce: 100
+  jumpForce: 50
   groundcheck: {fileID: 776540569}
   checkRadious: 0.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
   extraJumpsValue: 2
+--- !u!114 &1120314260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120314253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3bb14280284eb84393225db908e3247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
+--- !u!114 &1120314261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120314253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3bb14280284eb84393225db908e3247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
 --- !u!1 &1272109414
 GameObject:
   m_ObjectHideFlags: 0
