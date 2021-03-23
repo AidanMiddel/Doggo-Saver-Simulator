@@ -24,6 +24,8 @@ public class PlayerControler : MonoBehaviour
     public float checkRadious;
     public LayerMask whatIsGround;
 
+    public bool isJumping;
+
     //double jump
 
     private int extraJumps;
@@ -34,6 +36,8 @@ public class PlayerControler : MonoBehaviour
     void Start(){
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+
+        isGrounded = isJumping;
     }
 
     void FixedUpdate(){
