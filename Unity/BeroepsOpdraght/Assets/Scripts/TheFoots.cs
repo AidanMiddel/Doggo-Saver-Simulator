@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TheFoots : MonoBehaviour
 {
-    public GameObject player;
     PlayerControler playerCtrl;
     // Start is called before the first frame update
     void Start()
@@ -13,21 +10,21 @@ public class TheFoots : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Platform") && playerCtrl.isJumping)
+
+        if (other.gameObject.name.Equals("Platform"))
         {
-            playerCtrl.isJumping = false;
-            player.transform.parent = other.gameObject.transform;
+            this.transform.parent = other.transform;
         }
         
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Platform"))
+        if (other.gameObject.name.Equals("Platform"))
         {
-            player.transform.parent = null;
+            this.transform.parent = null;
         }
     }
 }

@@ -17,7 +17,7 @@ public class MovingPlatForm : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(transform.position == pos1.position)
         {
@@ -27,7 +27,6 @@ public class MovingPlatForm : MonoBehaviour
         if (transform.position == pos2.position)
         {
             nextPos = pos1.position;
-            Debug.Log("test");
         }
 
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);

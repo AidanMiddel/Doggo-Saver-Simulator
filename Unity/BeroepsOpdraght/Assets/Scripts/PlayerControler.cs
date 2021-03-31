@@ -24,51 +24,70 @@ public class PlayerControler : MonoBehaviour
     public float checkRadious;
     public LayerMask whatIsGround;
 
+    //Trigger variables
     public bool isJumping;
 
     //double jump
-
     private int extraJumps;
     public int extraJumpsValue;
 
-    //functions
 
+    //animation
+
+    private Animator anim;
+
+    //functions
     void Start(){
         extraJumps = extraJumpsValue;
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
+        //Trigger Var
         isGrounded = isJumping;
     }
 
     void FixedUpdate(){
-
+        //A & D > LeftArrow & RightArrow
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkRadious, whatIsGround);
 
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-        Debug.Log(moveInput);
 
         if (facingRight == false && moveInput > 0) {
             Flip();
         } else if(facingRight == true && moveInput < 0) {
             Flip();
         }
+
+        if (moveInput == 0)
+        {
+            anim.SetBool("isRunning", false);
+        } else
+        {
+            anim.SetBool("isRunning", true);
+        }
     }
 
     void Update(){
+         
+        //Extra Jumps
         if (isGrounded == true){
             extraJumps = extraJumpsValue;
         }
 
-        if(Input.GetButtonDown("Jump") && extraJumps > 0){
+        if(Input.GetButtonDown("Jump") && extraJumps > 0)
+        {
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
-        } else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true){
+        } else if (Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)
+        {
             rb.velocity = Vector2.up * jumpForce;
         }
     }
 
     void Flip(){
+
+        //Sprite flipper
         facingRight = !facingRight;
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;

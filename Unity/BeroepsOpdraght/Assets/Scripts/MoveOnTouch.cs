@@ -7,20 +7,24 @@ public class MoveOnTouch : MonoBehaviour
 
     private bool moving;
 
-    private void OncollisionEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "Player")
+        Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.name.Equals("Player"))
         {
+            Debug.Log("test");
             moving = true;
-            collision.GetComponent<Collider>().transform.SetParent(transform);
+            collision.gameObject.transform.parent = transform;
+            /*collision.GetComponent<Collision.game>().transform.SetParent(transform);*/
         }
     }
 
-    private void OncollisionExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.gameObject.name.Equals("Player"))
         {
-            collision.GetComponent<Collider>().transform.SetParent(null);
+            //collision.GetComponent<Collider>().transform.SetParent(null);
+            collision.gameObject.transform.parent = (null);
         }
     }
 
