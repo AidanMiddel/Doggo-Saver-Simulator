@@ -9,6 +9,7 @@ public class PlayerControler : MonoBehaviour
     public float speed;
     public float jumpForce;
     private float moveInput;
+    public GameObject other;
 
     private Rigidbody2D rb;
 
@@ -25,9 +26,12 @@ public class PlayerControler : MonoBehaviour
     public LayerMask whatIsGround;
 
     //Trigger variables
+
     public bool isJumping;
+    LevelManager LVLManager;
 
     //double jump
+
     private int extraJumps;
     public int extraJumpsValue;
 
@@ -37,6 +41,12 @@ public class PlayerControler : MonoBehaviour
     private Animator anim;
 
     //functions
+
+    private void Awake()
+    {
+        LVLManager = GameObject.FindObjectOfType<LevelManager>();
+    }
+
     void Start(){
         extraJumps = extraJumpsValue;
         anim = GetComponent<Animator>();
@@ -44,8 +54,6 @@ public class PlayerControler : MonoBehaviour
 
         //Trigger Var
         isGrounded = isJumping;
-
-
     }
 
     void FixedUpdate(){
@@ -112,7 +120,12 @@ public class PlayerControler : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Enemy"))
         {
-            
+            LVLManager.RespawnUpdate();
+        }
+
+        if (col.gameObject.tag.Equals("Kill_Box"))
+        {
+            Destroy(other);
         }
     }
 }

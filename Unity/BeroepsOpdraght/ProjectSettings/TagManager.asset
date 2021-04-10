@@ -9,6 +9,8 @@ TagManager:
   - Ground
   - Checkpoint
   - WinCircle
+  - Enemy
+  - Kill_Box
   layers:
   - Default
   - TransparentFX

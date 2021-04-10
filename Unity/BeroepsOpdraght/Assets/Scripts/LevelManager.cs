@@ -30,8 +30,21 @@ public class LevelManager : MonoBehaviour
                 Debug.Log("You have Failed");
                 Debug.Log(score);
             }
-
         } 
+    }
+
+    public void RespawnUpdate()
+    {
+        if (playerTransform)
+        {
+            playerTransform.position = spawnPoints.position;
+            hitpoint--;
+            if (hitpoint <= 0)
+            {
+                Debug.Log("You have Failed");
+                Debug.Log(score);
+            }
+        }
     }
 
 
