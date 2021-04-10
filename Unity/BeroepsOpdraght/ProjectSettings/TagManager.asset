@@ -7,6 +7,8 @@ TagManager:
   - SpeedBoost
   - Platform
   - Ground
+  - Checkpoint
+  - WinCircle
   layers:
   - Default
   - TransparentFX

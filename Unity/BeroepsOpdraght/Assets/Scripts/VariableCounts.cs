@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class VariableCounts
+public class VariableCounts
 {
     public static int KeyCount;
 }

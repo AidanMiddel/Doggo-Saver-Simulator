@@ -44,6 +44,8 @@ public class PlayerControler : MonoBehaviour
 
         //Trigger Var
         isGrounded = isJumping;
+
+
     }
 
     void FixedUpdate(){
@@ -93,4 +95,17 @@ public class PlayerControler : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
+
+
+    // Collectables
+    private void OnTriggerEnter(Collider hit)
+    {
+        switch (hit.gameObject.tag)
+        {
+            case "WinCircle":
+                LevelManager.Instance.Win();
+                break;
+        }
+    }
+
 }
