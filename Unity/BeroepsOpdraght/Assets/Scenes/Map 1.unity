@@ -273,6 +273,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5517260017329890232, guid: 129dd3f77230ce24a9435f62d957e9bf,
         type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517260017329890232, guid: 129dd3f77230ce24a9435f62d957e9bf,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -403,6 +408,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5517260018042282409, guid: 129dd3f77230ce24a9435f62d957e9bf,
         type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517260018042282409, guid: 129dd3f77230ce24a9435f62d957e9bf,
+        type: 3}
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
@@ -425,6 +435,11 @@ PrefabInstance:
         type: 3}
       propertyPath: extraJumpsValue
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517260018042282422, guid: 129dd3f77230ce24a9435f62d957e9bf,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5517260018194602817, guid: 129dd3f77230ce24a9435f62d957e9bf,
         type: 3}

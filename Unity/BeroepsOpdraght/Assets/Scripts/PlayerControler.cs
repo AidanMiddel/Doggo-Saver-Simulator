@@ -63,18 +63,21 @@ public class PlayerControler : MonoBehaviour
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
-        if (facingRight == false && moveInput > 0) {
-            Flip();
-        } else if(facingRight == true && moveInput < 0) {
-            Flip();
-        }
-
         if (moveInput == 0)
         {
             anim.SetBool("isRunning", false);
-        } else
+        }
+        else
         {
             anim.SetBool("isRunning", true);
+        }
+
+        if (moveInput < 0) {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        } 
+        else if(moveInput > 0) 
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 
@@ -95,16 +98,6 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
-    void Flip(){
-
-        //Sprite flipper
-        facingRight = !facingRight;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
-    }
-
-
     // Collectables
     private void OnTriggerEnter(Collider hit)
     {
@@ -116,6 +109,8 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
+
+    //Enemy interaction
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag.Equals("Enemy"))
