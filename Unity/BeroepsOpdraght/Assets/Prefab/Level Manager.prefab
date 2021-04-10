@@ -75,4 +75,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoints: {fileID: 5380062914648959399}
-  playerTransform: {fileID: 0}
+  playerTransform: {fileID: 5517260018042282408, guid: 129dd3f77230ce24a9435f62d957e9bf,
+    type: 3}
