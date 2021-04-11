@@ -11,6 +11,7 @@ TagManager:
   - WinCircle
   - Enemy
   - Kill_Box
+  - Kill_Box_2
   layers:
   - Default
   - TransparentFX

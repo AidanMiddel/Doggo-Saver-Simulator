@@ -240,12 +240,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &117950852 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3268890302011377230, guid: 2a5c690dbcf03b74fbdd10d2af6b0f91,
-    type: 3}
-  m_PrefabInstance: {fileID: 3268890301961097162}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &138598376
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +771,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844099842
 GameObject:
@@ -1916,6 +1910,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3268890302011377230, guid: 2a5c690dbcf03b74fbdd10d2af6b0f91,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3268890303651413949, guid: 2a5c690dbcf03b74fbdd10d2af6b0f91,
         type: 3}
       propertyPath: m_Size.x
@@ -2347,7 +2346,7 @@ PrefabInstance:
         type: 3}
       propertyPath: other
       value: 
-      objectReference: {fileID: 117950852}
+      objectReference: {fileID: 0}
     - target: {fileID: 5517260018042282420, guid: 129dd3f77230ce24a9435f62d957e9bf,
         type: 3}
       propertyPath: extraJumpsValue
