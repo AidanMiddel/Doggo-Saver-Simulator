@@ -10,13 +10,10 @@ public class PlayerControler : MonoBehaviour
     public float jumpForce;
     private float moveInput;
     GameObject other;
+    GameObject other2;
+    GameObject other3;
 
     private Rigidbody2D rb;
-
-    //fliping
-
-    private bool facingRight = true;
-
 
     //jumping variable
 
@@ -54,8 +51,6 @@ public class PlayerControler : MonoBehaviour
 
         //Trigger Var
         isGrounded = isJumping;
-
-        other.gameObject.tag.Equals("Enemy");
     }
 
     void FixedUpdate(){
@@ -122,7 +117,18 @@ public class PlayerControler : MonoBehaviour
 
         if (col.gameObject.tag.Equals("Kill_Box"))
         {
-            Destroy(other);
+            if (other)
+            {
+                Destroy(other);
+            }
+            if (other2)
+            {
+                Destroy(other2);
+            }
+            if (other3)
+            {
+                Destroy(other3);
+            }
         }
     }
 }
