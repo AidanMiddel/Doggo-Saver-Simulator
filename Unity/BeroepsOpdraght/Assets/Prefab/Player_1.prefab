@@ -233,7 +233,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
+<<<<<<< HEAD:Unity/BeroepsOpdraght/Assets/Prefab/Player 1.prefab
   m_SortingOrder: 0
+=======
+  m_SortingOrder: 1
+>>>>>>> 00f8a8daa1754e5708d0742eac1c5180f1afc847:Unity/BeroepsOpdraght/Assets/Prefab/Player_1.prefab
   m_Sprite: {fileID: 2931913400240671010, guid: 9d3c7f08d514b204fa13af256a6ae6fd,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -430,7 +434,7 @@ GameObject:
   - component: {fileID: 5517260018042282418}
   - component: {fileID: 3669459098101366859}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player_1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -932,7 +936,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6671900179423298672, guid: 9d3c7f08d514b204fa13af256a6ae6fd,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

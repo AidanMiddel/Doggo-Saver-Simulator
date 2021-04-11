@@ -239,6 +239,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5517260017329890232, guid: 129dd3f77230ce24a9435f62d957e9bf,
         type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517260017329890232, guid: 129dd3f77230ce24a9435f62d957e9bf,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -354,8 +359,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5517260018042282409, guid: 129dd3f77230ce24a9435f62d957e9bf,
         type: 3}
+<<<<<<< HEAD
       propertyPath: m_SortingOrder
       value: 3
+=======
+      propertyPath: m_FlipX
+      value: 0
+>>>>>>> 00f8a8daa1754e5708d0742eac1c5180f1afc847
       objectReference: {fileID: 0}
     - target: {fileID: 5517260018042282409, guid: 129dd3f77230ce24a9435f62d957e9bf,
         type: 3}
@@ -382,10 +392,17 @@ PrefabInstance:
       propertyPath: extraJumpsValue
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 5517260018042282423, guid: 129dd3f77230ce24a9435f62d957e9bf,
         type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
+=======
+    - target: {fileID: 5517260018042282422, guid: 129dd3f77230ce24a9435f62d957e9bf,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+>>>>>>> 00f8a8daa1754e5708d0742eac1c5180f1afc847
       objectReference: {fileID: 0}
     - target: {fileID: 5517260018194602817, guid: 129dd3f77230ce24a9435f62d957e9bf,
         type: 3}
