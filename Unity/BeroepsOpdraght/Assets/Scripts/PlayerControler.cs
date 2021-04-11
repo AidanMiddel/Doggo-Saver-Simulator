@@ -117,18 +117,11 @@ public class PlayerControler : MonoBehaviour
 
         if (col.gameObject.tag.Equals("Kill_Box"))
         {
-            if (other)
-            {
-                Destroy(other);
-            }
-            if (other2)
-            {
-                Destroy(other2);
-            }
-            if (other3)
-            {
-                Destroy(other3);
-            }
+            Destroy(other);
+        }
+        if (col.gameObject.tag.Equals("Kill_Box_2"))
+        {
+            Destroy(other);
         }
     }
 }
