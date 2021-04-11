@@ -9,7 +9,7 @@ public class PlayerControler : MonoBehaviour
     public float speed;
     public float jumpForce;
     private float moveInput;
-    public GameObject other, other2, other3, other4, other5, other6, other7;
+    public GameObject other, other2, other3, other4, other5, other6, other7, other8;
 
     private Rigidbody2D rb;
 
@@ -140,6 +140,10 @@ public class PlayerControler : MonoBehaviour
         if (col.gameObject.tag.Equals("Kill_Box_7"))
         {
             Destroy(other7);
+        }
+        if (col.gameObject.tag.Equals("EndLevel"))
+        {
+            
         }
     }
 }

@@ -17,6 +17,7 @@ TagManager:
   - Kill_Box_5
   - Kill_Box_6
   - Kill_Box_7
+  - EndLevel
   layers:
   - Default
   - TransparentFX
