@@ -11,12 +11,10 @@ public class LevelManager : MonoBehaviour
     public Transform spawnPoints;
     public Transform playerTransform;
 
-    PlayerControler player;
-
     //before private void start()
     private void Awake()
     {
-        player = GameObject.FindObjectOfType<PlayerControler>();
+        
         Instance = this;
     }
 
@@ -29,7 +27,7 @@ public class LevelManager : MonoBehaviour
             hitpoint--;
             if (hitpoint <= 0)
             {
-                player.DestroyPlayer();
+                Debug.Log("You have Failed");
                 Debug.Log(score);
             }
         } 
@@ -43,7 +41,7 @@ public class LevelManager : MonoBehaviour
             hitpoint--;
             if (hitpoint <= 0)
             {
-                player.DestroyPlayer();
+                Debug.Log("You have Failed");
                 Debug.Log(score);
             }
         }
