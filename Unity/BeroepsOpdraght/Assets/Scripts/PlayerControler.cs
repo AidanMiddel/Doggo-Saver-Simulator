@@ -121,7 +121,7 @@ public class PlayerControler : MonoBehaviour
         }
         if (col.gameObject.tag.Equals("Kill_Box_2"))
         {
-            Destroy(other);
+            Destroy(other2);
         }
     }
 }
