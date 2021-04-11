@@ -9,9 +9,9 @@ public class PlayerControler : MonoBehaviour
     public float speed;
     public float jumpForce;
     private float moveInput;
-    GameObject other;
-    GameObject other2;
-    GameObject other3;
+    public GameObject other;
+    public GameObject other2;
+    public GameObject other3;
 
     private Rigidbody2D rb;
 
