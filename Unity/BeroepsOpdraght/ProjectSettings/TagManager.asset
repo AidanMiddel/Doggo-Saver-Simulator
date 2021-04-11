@@ -12,6 +12,11 @@ TagManager:
   - Enemy
   - Kill_Box
   - Kill_Box_2
+  - Kill_Box_3
+  - Kill_Box_4
+  - Kill_Box_5
+  - Kill_Box_6
+  - Kill_Box_7
   layers:
   - Default
   - TransparentFX

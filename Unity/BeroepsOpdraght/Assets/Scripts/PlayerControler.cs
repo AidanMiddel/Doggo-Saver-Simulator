@@ -9,7 +9,7 @@ public class PlayerControler : MonoBehaviour
     public float speed;
     public float jumpForce;
     private float moveInput;
-    public GameObject other, other2, other3, other4, other5, other7;
+    public GameObject other, other2, other3, other4, other5, other6, other7;
 
     private Rigidbody2D rb;
 
@@ -120,6 +120,26 @@ public class PlayerControler : MonoBehaviour
         if (col.gameObject.tag.Equals("Kill_Box_2"))
         {
             Destroy(other2);
+        }
+        if (col.gameObject.tag.Equals("Kill_Box_3"))
+        {
+            Destroy(other3);
+        }
+        if (col.gameObject.tag.Equals("Kill_Box_4"))
+        {
+            Destroy(other4);
+        }
+        if (col.gameObject.tag.Equals("Kill_Box_5"))
+        {
+            Destroy(other5);
+        }
+        if (col.gameObject.tag.Equals("Kill_Box_6"))
+        {
+            Destroy(other6);
+        }
+        if (col.gameObject.tag.Equals("Kill_Box_7"))
+        {
+            Destroy(other7);
         }
     }
 }
