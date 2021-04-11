@@ -9,7 +9,7 @@ public class PlayerControler : MonoBehaviour
     public float speed;
     public float jumpForce;
     private float moveInput;
-    public GameObject other;
+    GameObject other;
 
     private Rigidbody2D rb;
 
@@ -49,6 +49,8 @@ public class PlayerControler : MonoBehaviour
 
         //Trigger Var
         isGrounded = isJumping;
+
+        other.gameObject.tag.Equals("Enemy");
     }
 
     void FixedUpdate(){
