@@ -13,11 +13,6 @@ public class PlayerControler : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    //fliping
-
-    private bool facingRight = true;
-
-
     //jumping variable
 
     private bool isGrounded;
@@ -122,5 +117,10 @@ public class PlayerControler : MonoBehaviour
         {
             Destroy(other);
         }
+    }
+    
+    public void DestroyPlayer()
+    {
+        Destroy(gameObject);
     }
 }

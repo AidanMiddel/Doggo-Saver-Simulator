@@ -8,7 +8,7 @@ public class KeyItem : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            VariableCounts.KeyCount += 2;
+            VariableCounts.KeyCount += 1;
             Destroy(gameObject);
         }
     }
