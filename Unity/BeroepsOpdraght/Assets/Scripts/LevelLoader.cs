@@ -10,13 +10,6 @@ public class LevelLoader : MonoBehaviour
     public float transitionTime = 1f;
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            LoadNextLevel();
-        }
-    }
 
     public void LoadNextLevel()
     {

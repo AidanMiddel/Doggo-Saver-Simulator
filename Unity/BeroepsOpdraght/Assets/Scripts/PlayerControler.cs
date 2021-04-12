@@ -24,6 +24,7 @@ public class PlayerControler : MonoBehaviour
 
     public bool isJumping;
     LevelManager LVLManager;
+    LevelLoader Loader;
 
     //double jump
 
@@ -40,6 +41,7 @@ public class PlayerControler : MonoBehaviour
     private void Awake()
     {
         LVLManager = GameObject.FindObjectOfType<LevelManager>();
+        Loader = GameObject.FindObjectOfType<LevelLoader>();
     }
 
     void Start(){
@@ -93,57 +95,39 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
-    // Collectables
-    private void OnTriggerEnter(Collider hit)
-    {
-        switch (hit.gameObject.tag)
-        {
-            case "WinCircle":
-                LevelManager.Instance.Win();
-                break;
-        }
-    }
 
-
-    //Enemy interaction
+    //Enemy interaction && LevelLoader
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag.Equals("Enemy"))
+        switch (col.gameObject.tag)
         {
-            LVLManager.RespawnUpdate();
-        }
-
-        if (col.gameObject.tag.Equals("Kill_Box"))
-        {
-            Destroy(other);
-        }
-        if (col.gameObject.tag.Equals("Kill_Box_2"))
-        {
-            Destroy(other2);
-        }
-        if (col.gameObject.tag.Equals("Kill_Box_3"))
-        {
-            Destroy(other3);
-        }
-        if (col.gameObject.tag.Equals("Kill_Box_4"))
-        {
-            Destroy(other4);
-        }
-        if (col.gameObject.tag.Equals("Kill_Box_5"))
-        {
-            Destroy(other5);
-        }
-        if (col.gameObject.tag.Equals("Kill_Box_6"))
-        {
-            Destroy(other6);
-        }
-        if (col.gameObject.tag.Equals("Kill_Box_7"))
-        {
-            Destroy(other7);
-        }
-        if (col.gameObject.tag.Equals("EndLevel"))
-        {
-            
+            case "Enemy":
+                LVLManager.RespawnUpdate();
+                break;
+            case "Kill_Box":
+                Destroy(other);
+                break;
+            case "Kill_Box_2":
+                Destroy(other2);
+                break;
+            case "Kill_Box_3":
+                Destroy(other3);
+                break;
+            case "Kill_Box_4":
+                Destroy(other4);
+                break;
+            case "Kill_Box_5":
+                Destroy(other5);
+                break;
+            case "Kill_Box_6":
+                Destroy(other6);
+                break;
+            case "Kill_Box_7":
+                Destroy(other7);
+                break;
+            case "WinCircle":
+                Loader.LoadNextLevel();
+                break;
         }
     }
 }

@@ -75,7 +75,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0066662226, y: -0.0059159556}
+  m_Offset: {x: 0.006291426, y: -0.0059159556}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -86,7 +86,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08060227, y: 0.023124086}
+  m_Size: {x: 0.06561127, y: 0.023124086}
   m_EdgeRadius: 0
 --- !u!50 &2038098475
 Rigidbody2D:
@@ -160,7 +160,7 @@ PrefabInstance:
     - target: {fileID: 1150573312390126611, guid: 78a803e079aa7aa4a9b5156b38c9850a,
         type: 3}
       propertyPath: m_Name
-      value: shroomie
+      value: shroomie Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1150573312390126611, guid: 78a803e079aa7aa4a9b5156b38c9850a,
         type: 3}
