@@ -76,3 +76,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoints: {fileID: 5380062914648959399}
   playerTransform: {fileID: 0}
+  deadGameScene: you_died

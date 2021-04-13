@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/map 9.unity
     guid: 28f1c5d3b49837d4eb7eb1fdec785184
+  - enabled: 1
+    path: Assets/Scenes/you win.unity
+    guid: fb9fdf471a0a7c14c8ef4c3844081b94
+  - enabled: 1
+    path: Assets/Scenes/you_died.unity
+    guid: 291eef25e4645584a9a354937486fcde
   m_configObjects: {}

@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class LevelManager : MonoBehaviour
 
     public Transform spawnPoints;
     public Transform playerTransform;
+
+    public string deadGameScene;
 
     //before private void start()
     private void Awake()
@@ -27,8 +30,7 @@ public class LevelManager : MonoBehaviour
             hitpoint--;
             if (hitpoint <= 0)
             {
-                Debug.Log("You have Failed");
-                Debug.Log(score);
+                SceneManager.LoadScene(deadGameScene);
             }
         } 
     }
@@ -41,8 +43,7 @@ public class LevelManager : MonoBehaviour
             hitpoint--;
             if (hitpoint <= 0)
             {
-                Debug.Log("You have Failed");
-                Debug.Log(score);
+                SceneManager.LoadScene(deadGameScene);
             }
         }
     }

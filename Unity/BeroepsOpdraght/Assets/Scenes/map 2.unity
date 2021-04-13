@@ -800,6 +800,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5380062915206100609, guid: 2501a41c8454aad44940e17198e38e14,
         type: 3}
+      propertyPath: deadGameScene
+      value: you_died
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380062915206100609, guid: 2501a41c8454aad44940e17198e38e14,
+        type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1813289317}
